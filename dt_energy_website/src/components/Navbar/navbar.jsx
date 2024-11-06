@@ -2,6 +2,7 @@ import React from 'react';
 import './Navbar.css';
 import DTlogo from '../../assets/dtnlogo.png'; // Correct import
 import { FaEnvelope, FaPhoneAlt } from 'react-icons/fa';
+import { FaBars } from 'react-icons/fa';
 
 const Navbar = () => {
     return (
@@ -25,6 +26,10 @@ const Navbar = () => {
                     <span>dreamtrillions100@gmail.com</span>
 
 
+                </div>
+
+                <div className='navbar-humburger'>
+                  <FaBars className="icon"/>  
                 </div>
 
             </div>
