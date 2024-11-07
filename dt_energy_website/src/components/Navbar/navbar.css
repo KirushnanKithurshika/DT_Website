@@ -70,7 +70,9 @@ body {
   z-index: 1;
 }
 
-/* Wave animation */
+
+
+
 @keyframes wave-animation {
   0% {
     transform: scale(0.8);
@@ -129,6 +131,7 @@ body {
 
 
 .navbar-links {
+  margin-top: 40px;
   display: flex;
   justify-content: end;
   margin-right: 200px;
@@ -180,42 +183,44 @@ body {
 
   .navbar-contactnumber {
     font-size: 18px;
-    
+
   }
 
   .icon-container {
     width: 35px;
-   
+
     height: 35px;
   }
 
   .icon {
     font-size: 16px;
-    
+
   }
 
   .phone-number {
     font-size: 18px;
-    
+
   }
 
   .navbar-contactemail {
     font-size: 18px;
-   
+
   }
 }
-.navbar-humburger{
+
+.navbar-humburger {
   display: none;
-  
+
 }
 
 @media (max-width: 900px) {
 
 
-  .navbar-humburger{
+  .navbar-humburger {
     display: none;
-    
+
   }
+
   .navbar-links {
     display: flex;
     justify-content: center;
@@ -231,7 +236,7 @@ body {
     height: 50px;
   }
 
-  .navbar-humburger{
+  .navbar-humburger {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -245,10 +250,10 @@ body {
 
   .navbar-contactnumber span {
     display: none;
-    /* Hide phone number text */
+   
   }
 
-  /* Only show email icon, hide the email text */
+  
   .navbar-contactemail {
     display: flex;
     align-items: center;
@@ -267,7 +272,7 @@ body {
   }
 
   .icon {
-    font-size: 22px;
+    font-size: 20px;
     /* Icon size adjustment */
   }
 
@@ -278,21 +283,21 @@ body {
     grid-template-areas: "logo number email humburger";
 
   }
-  
-    .navbar-links {
-    
-     display:none;
+
+  .navbar-links {
+
+    display: none;
   }
-  
-  
-  
+
+
+
   .navbar-links a {
     position: relative;
     text-decoration: none;
     color: inherit;
     transition: color 0.3s ease;
   }
-  
+
   .navbar-links a::after {
     content: '';
     position: absolute;
@@ -303,9 +308,9 @@ body {
     background-color: #696569;
     transition: width 0.3s ease;
   }
-  
+
   .navbar-links a:hover::after {
     width: 100%;
   }
-  
+
 }

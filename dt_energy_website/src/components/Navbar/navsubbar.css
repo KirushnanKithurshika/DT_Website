@@ -1,0 +1,49 @@
+.navsubbar-container {
+    display:none;
+    margin-right: 0px;
+    background-color: rgb(255, 255, 255);
+    border: 5px solid transparent;
+    border-radius: 20px;
+    width: 150px;
+    display: flex;
+    font-size: 20px;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    margin-right: 20px;
+    margin-top: 130px;
+    transition: border 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: absolute;
+    right: 0;
+    transform: translateY(-50%); /* Optional: Adjust for perfect vertical centering */
+  }
+  
+  
+  .navsubbar-container a {
+  
+    border-inline-end-color: #696569;
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px 0; 
+    position: relative;
+    color: #8d8a8c;  
+  }
+  
+  .navsubbar-container a::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 1px; 
+    width: 0;
+    background-color: #7a197b;  
+    transition: width 0.3s ease; 
+  }
+  
+  .navsubbar-container a:hover::before {
+    width: 100%;
+  }
+  
+
+  
