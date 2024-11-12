@@ -214,3 +214,54 @@
     padding: 0 20px;
     box-sizing: border-box;
 }
+@media (max-width: 400px) {
+    .homepage-background {
+        height: 50vh;
+        /* Set background to half height on smaller screens */
+        grid-template-rows: 100px auto;
+    }
+
+    .home-intro {
+        padding: 20px;
+        margin-top: 0px;
+        margin-left: 5px;
+    
+    }
+
+    .intro-text {
+        font-size:30px;
+        font-weight: bold;
+    }
+
+    .intro-subtext {
+        font-size: 16px;
+        margin-top: 10px;
+        color: rgb(255, 255, 255);
+    }
+
+    .intro-button {
+        margin-top: 10px;
+        padding: 5px 15px;
+        background-color:#620d5d;;
+        /* Green button */
+        color: white;
+        border: none;
+        cursor: pointer;
+        font-size: 14px;
+    }
+
+    .intro-button:hover {
+        background-color: #d84bb3;
+    }
+    .nav_container {
+        position: relative;
+        grid-row: 1;
+        /* Position navbar in the first row */
+        z-index: 2;
+        /* Ensure the navbar stays above the dark overlay */
+        padding: 0 10px;
+        box-sizing: border-box;
+    }
+    
+}
+

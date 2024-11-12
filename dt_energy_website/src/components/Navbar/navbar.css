@@ -168,7 +168,7 @@ body {
   }
 
   .navbar-links {
-    gap:60px;
+    gap: 60px;
     margin-right: 0px;
     display: flex;
     justify-content: center;
@@ -251,10 +251,10 @@ body {
 
   .navbar-contactnumber span {
     display: none;
-   
+
   }
 
-  
+
   .navbar-contactemail {
     display: flex;
     align-items: center;
@@ -315,3 +315,75 @@ body {
   }
 
 }
+
+@media (max-width: 400px) {
+
+  /* Adjust logo size */
+  .logo-image {
+    height: 35px;
+    /* Smaller logo size for smaller screens */
+    margin-left: 20px;
+    /* Adjust left margin */
+    margin-right: 8px;
+    /* Keep right margin */
+  }
+
+  /* Adjust contact number font size */
+  .navbar-contactnumber {
+    font-size: 14px;
+    /* Smaller font for the number */
+    gap: 10px;
+    /* Reduced gap */
+  }
+
+  /* Adjust icon size */
+  .icon-container {
+    width: 30px;
+    height: 30px;
+  }
+
+  .icon {
+    font-size: 16px;
+    /* Smaller icons */
+  }
+
+  /* Adjust navbar links */
+  .navbar-links {
+    font-size: 14px;
+    /* Smaller font size */
+    gap: 30px;
+    /* Reduced gap */
+  }
+
+  .navbar-links a {
+    font-size: 14px;
+    /* Smaller font for links */
+  }
+
+  /* Modify the hamburger menu appearance */
+  .navbar-humburger {
+    display: flex;
+    /* Ensure hamburger is visible */
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* Modify navbar grid layout for very small screens */
+  .navbar-grid {
+    grid-template-columns: 5fr 1fr 1fr 1fr;
+    grid-template-areas: "logo number email humburger";
+    background-color: white;
+    box-shadow: 0 5px 30px rgba(0, 0, 0, 0.1);
+    padding: 0px;
+    padding-inline: 10px;
+    border-radius: 50px;
+    display: grid;
+    gap: 2px;
+    align-items: center;
+    grid-template-areas: "logo number email";
+  }
+
+}
+
+
+
