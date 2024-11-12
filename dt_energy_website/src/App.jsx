@@ -5,6 +5,7 @@ import './App.css';
 import './App.css'
 import Navbar from './components/Navbar/navbar';
 import Navsubarmobileview from './components/Navbar/navsubbar_vertical';
+import Homepage from './pages/HomePage/homepage';
 
 function App() {
   const [count, setCount] = useState(0)
@@ -12,8 +13,8 @@ function App() {
   return (
     <BrowserRouter>
      <Routes>
-      <Route path='/' element={<Navbar/>}/>
-      <Route path='/navbar' element={<Navsubarmobileview/>}/>
+      <Route path='/' element={<Homepage/>}/>
+      <Route path='/navbar' element={<Navbar/>}/>
          </Routes>
 </BrowserRouter>
        

@@ -137,7 +137,7 @@ body {
   margin-right: 200px;
   gap: 100px;
   font-size: 22px;
-  color: #bdc4cd;
+  color: #ffffff;
 }
 
 .navbar-links a {
@@ -153,8 +153,8 @@ body {
   bottom: -5px;
   left: 0;
   width: 0;
-  height: 2px;
-  background-color: #696569;
+  height: 3px;
+  background-color: #f1dbf1;
   transition: width 0.3s ease;
 }
 
@@ -168,11 +168,12 @@ body {
   }
 
   .navbar-links {
+    gap:60px;
     margin-right: 0px;
     display: flex;
     justify-content: center;
     font-size: 18px;
-    color: #bdc4cd;
+    color: #ffffff;
   }
 
   .navbar-links a {
@@ -226,7 +227,7 @@ body {
     justify-content: center;
     font-size: 16px;
     gap: 40px;
-    color: #bdc4cd;
+    color: #fefefe;
   }
 }
 
