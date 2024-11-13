@@ -1,0 +1,63 @@
+.solutions-container {
+    display: grid;
+    grid-template-rows: auto 1fr; /* Two rows: header and content */
+    grid-template-areas:
+      "head"
+      "service";
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .solutions-title {
+    grid-area: head;
+    color: #4a2c6b;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .solutions-grid {
+    grid-area: service;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .solution-card {
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  .solution-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  .solution-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .solution-card:hover .solution-overlay {
+    opacity: 1;
+  }
+  
+  .solution-text {
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
