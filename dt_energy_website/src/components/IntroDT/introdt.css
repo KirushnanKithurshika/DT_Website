@@ -198,7 +198,7 @@
 
     .intro-span {
         margin-top: 5px;
-        font-size: 22px;
+        font-size: 30px;
         font-weight: bold;
         color: #661044;
         padding:0 10px;
@@ -291,9 +291,9 @@
     }
 
     .introtext {
-        font-size: 12px;
+        font-size: 16px;
         color:#084169;
-        padding: 40px;
+        padding: 20px;
         font-weight:550;
         text-align: justify;
         justify-content: flex-start;

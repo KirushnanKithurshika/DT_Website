@@ -2,8 +2,8 @@ import React from 'react';
 import backgroundImage from '../../assets/BG.jpg';
 import Navbar from '../../components/Navbar/navbar';
 import './homepage.css';
-import introdt from '../../components/IntroDT/introdt';
 import Introdt from '../../components/IntroDT/introdt';
+import Services from '../../components/Services/services';
 
 function Homepage() {
   return (
@@ -26,6 +26,7 @@ function Homepage() {
       </div>
     </div>
     <Introdt/>
+    <Services/>
     </div>
   );
 }
