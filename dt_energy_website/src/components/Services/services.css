@@ -15,6 +15,7 @@
     font-size: 32px;
     font-weight: bold;
     margin-bottom: 20px;
+ 
   }
   .solution-title {
     font-size: 18px;
@@ -97,12 +98,12 @@
     background-color: #6a4c8c; /* Lighter shade on hover */
   }
 
-  @media (max-width: 1500px) {
+  @media (max-width: 1750px) {
     .solutions-grid {
       grid-template-columns: repeat(2, 1fr); 
     }
     .solutions-grid {
-       
+       margin-top: 10px;
         margin:100px;
        
       }

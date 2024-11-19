@@ -1,0 +1,247 @@
+/* Default Grid layout for the partners section */
+/* Default Grid layout for the partners section */
+.partners-container {
+  margin-top:100px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.partners-grid {
+  display: grid;
+  grid-template-rows: auto auto 1fr; /* Three rows: heading, subheading, and content */
+  grid-gap: 50px;
+  text-align: center;
+  width: 100%;
+}
+
+.partners-heading-container {
+  position: relative;
+  grid-row: 1;
+}
+
+.partners-heading {
+  font-size: 40px;
+  font-weight: bold;
+  color: #811473;
+}
+
+.partners-subheading-container {
+  position: relative;
+  grid-row: 2;
+  padding: 0px 300px;
+}
+
+.partners-subheading {
+  font-size: 18px;
+  font-weight: 500;
+  color: #797179;
+}
+
+.partners-content-container {
+  grid-row: 3;
+  position: relative; /* Create a context for positioning */
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  padding: 20px 0;
+  border-radius: 8px;
+}
+
+/* Background Wrapper */
+.partners-background {
+  position: absolute; /* Position the background image behind content */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url('../../assets/partners background.jpg'); /* Use the imported image path */
+  background-size: cover;
+  background-position: center;
+  opacity: 0.4; /* Apply opacity to background image only */
+  border-radius: 8px;
+  z-index: -1; /* Ensure the background is behind the logos */
+}
+
+/* First section grid for logos */
+.first {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 100px;
+  padding: 30px;
+  order: 1;
+  align-items: center;
+  justify-items: center;
+}
+
+/* Grid box for each partner logo */
+.grid-box {
+  width: 300px;
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Default shadow */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for both */
+  cursor: pointer; /* Add pointer cursor on hover */
+  will-change: transform; /* Hint for better performance */
+}
+
+.grid-box:hover {
+  transform: scale(1.1) translateY(-10px); /* Scale up and move up */
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2); /* Larger shadow on hover */
+}
+
+/* Optional: Add zoom effect when the cursor is near */
+.grid-box {
+  position: relative;
+}
+
+.grid-box::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.1); /* Slight shadow around the grid box */
+  border-radius: 8px;
+  pointer-events: none;
+  transition: transform 0.3s ease; /* Smooth transition */
+}
+
+/* Hover effect to create the zoom-in animation when the mouse is near the grid-box */
+.grid-box:hover::after {
+  transform: scale(1.2); /* Slight zoom effect on hover */
+  background: rgba(0, 0, 0, 0.15); /* Darker shadow for hover */
+}
+
+
+/* Make sure images inside grid-box are responsive */
+.grid-box img {
+  max-width: 80%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+
+
+
+
+@media (max-width: 1800px) {
+  .partners-content-container {
+    gap: 20px;
+  }
+  .partners-grid {
+      grid-gap: 30px;
+    
+  }
+  
+
+  .first {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+  }
+
+  .grid-box {
+    width: 250px; /* Smaller width */
+    height: 100px; /* Smaller height */
+  }
+}
+@media (max-width: 1500px) {
+  .partners-subheading {
+    display: none; /* Hide subheading */
+  }
+}
+
+/* For large tablets and below */
+@media (max-width: 1024px) {
+  .partners-container {
+    margin-top:60px;
+    
+  }
+  .partners-content-container {
+    gap: 0px;
+  }
+
+  .partners-subheading {
+    display: none; /* Hide subheading */
+  }
+
+  .first {
+    grid-template-columns: repeat(3, 1fr); /* Adjust to 3 columns */
+  }
+
+  .second {
+    grid-template-columns: repeat(3, 1fr); /* Adjust to 3 columns */
+  }
+
+  .grid-box {
+    width: 150px;
+    height: 80px;
+  }
+}
+
+@media (max-width: 768px) {
+  .partners-container {
+    margin-top:30px;
+    
+  }
+  .partners-content-container {
+    gap: 0px;
+  }
+
+  .partners-grid {
+    grid-template-rows: auto auto 1fr;
+  }
+
+  .partners-heading {
+    font-size: 28px;
+  }
+
+  .partners-subheading {
+    font-size: 14px;
+  }
+
+  .first {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+  }
+
+  .grid-box {
+    width: 150px;
+    height: 80px;
+  }
+}
+
+@media (max-width: 480px) {
+
+  .partners-container {
+    margin-top:20px;
+    
+  }
+  .partners-content-container {
+    gap: 0px;
+  }
+
+  .partners-heading {
+    font-size: 24px;
+  }
+
+  .partners-subheading {
+    font-size: 12px;
+  }
+
+  .first {
+    gap: 30px;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .grid-box {
+    width: 150px;
+    height: 80px;
+  }
+}

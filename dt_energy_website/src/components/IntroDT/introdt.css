@@ -29,9 +29,11 @@
 .intro-span {
     font-size: 36px;
     font-weight: bold;
-    color: #661044;
+    color: #811473;
     margin-top:60px;
     margin-bottom: 10px;
+  
+  
 }
 
 .intro-subspan {
@@ -86,7 +88,7 @@
     font-size:30px;
     grid-area: text;
     display: flex;
-    padding: 60px;
+    padding: 30px;
     margin-right: 100px;
     justify-content: center; /* Centers horizontally */
     align-items: center; /* Centers vertically */
@@ -94,7 +96,20 @@
     height: 100%; /* Ensures it takes the full height of the container */
 }
 
+@media (max-width: 1600px) {
+    .introtext {
+        font-size: 26px;
+        padding:20px
+    }
 
+    .introC{
+        margin-top: 10px;
+    }
+
+    .intro-subspan{
+        margin-bottom: 20px;
+    }
+}
 
 @media (max-width: 1024px) {
     .introC-background {

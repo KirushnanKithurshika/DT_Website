@@ -18,7 +18,8 @@ const Services = () => {
 
   return (
     <div className="solutions-container">
-      <h2 className="title">Tailored Solutions for You...</h2>
+      <h2 className="title"  data-aos="slide-right" 
+            data-aos-delay="500" >Tailored Solutions for You...</h2>
       <div className="solutions-grid">
         <div className="solution-card" data-aos="fade-up">
           <img src={solarInstallation} alt="Solar Installation" className="solution-image" />

@@ -4,6 +4,7 @@ import Navbar from '../../components/Navbar/navbar';
 import './homepage.css';
 import Introdt from '../../components/IntroDT/introdt';
 import Services from '../../components/Services/services';
+import Partners from '../../components/Partners/partners';
 
 function Homepage() {
   return (
@@ -27,6 +28,7 @@ function Homepage() {
     </div>
     <Introdt/>
     <Services/>
+    <Partners/>
     </div>
   );
 }

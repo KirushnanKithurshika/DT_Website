@@ -7,7 +7,7 @@ import intropic from '../../assets/Introimage.png';
 
 function Introdt() {
   useEffect(() => {
-    AOS.init({ duration: 1000 }); // Initialize AOS with a duration
+    AOS.init({ duration: 1000 }); 
   }, []);
 
   return (
