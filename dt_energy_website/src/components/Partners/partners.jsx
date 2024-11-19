@@ -36,31 +36,29 @@ function Partners() {
           </span>
         </div>
 
-        {/* Subheading with side animation (coming from right) */}
+       
         <div className="partners-subheading-container"  data-aos="slide-right" 
             data-aos-delay="500" >
           <span
             className="partners-subheading"
-            data-aos="slide-right"  // Animate subheading sliding from the right
-            data-aos-delay="400"  // Delay before the animation starts
+            data-aos="slide-right" 
+            data-aos-delay="400"  
           >
             At DT Energy, we collaborate with trusted partners who share our vision of a greener, more sustainable future.
             Our partnerships allow us to deliver cutting-edge solar solutions to our customers, ensuring long-term value and positive environmental impact.
           </span>
         </div>
 
-        {/* Content with Background Image */}
+       
         <div className="partners-content-container">
-          {/* Background Wrapper with Animation */}
           <div
             className="partners-background"
             data-aos="fade-in"
-            data-aos-delay="600" // Animation for background
+            data-aos-delay="600" 
           ></div>
 
-          {/* Partner Logos Grid */}
+          
           <div className="first">
-            {/* Grid Boxes with logo images */}
             <div className="grid-box" data-aos="zoom-in" data-aos-delay="300">
               <img src={logo1} alt="Logo 1" />
             </div>
