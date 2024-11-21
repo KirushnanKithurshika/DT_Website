@@ -5,6 +5,7 @@ import './homepage.css';
 import Introdt from '../../components/IntroDT/introdt';
 import Services from '../../components/Services/services';
 import Partners from '../../components/Partners/partners';
+import BankPartners from '../../components/Bankingpartens/bankingpartners';
 
 function Homepage() {
   return (
@@ -29,6 +30,7 @@ function Homepage() {
     <Introdt/>
     <Services/>
     <Partners/>
+    <BankPartners/>
     </div>
   );
 }

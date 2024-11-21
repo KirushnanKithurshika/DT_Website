@@ -9,6 +9,8 @@ import Homepage from './pages/HomePage/homepage';
 import Services from './components/Services/services';
 import Partners from './components/Partners/partners';
 import Getaquote from './components/getaquote/getaquote';
+import BankPartners from './components/Bankingpartens/bankingpartners';
+import Contact from './components/Contact/contact';
 
 function App() {
   const [count, setCount] = useState(0)
@@ -20,6 +22,8 @@ function App() {
       <Route path='/navbar' element={<Navbar/>}/>
       <Route path='/partner' element={<Partners/>}/>
       <Route path='/getaquote' element={<Getaquote/>}/>
+      <Route path='/bankpartner' element={<BankPartners/>}/>
+      <Route path='/contactfooter' element={<Contact/>}/>
          </Routes>
 </BrowserRouter>
        
