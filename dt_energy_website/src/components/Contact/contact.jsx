@@ -14,12 +14,13 @@ function Contact() {
   return (
     <div className="contact-container">
       <div className="Authorized-container">
-        <div className='contact-heading'>Authorized by</div>
+        <div className="contact-heading">Authorized by</div>
         <div className="authorized-logos">
           <img src={SLS} alt="SLS Logo" />
           <img src={CEB} alt="CEB Logo" />
         </div>
       </div>
+      
       <div className="contact-details">
         <div className="contact-info">
           <div className="contact-heading">Contact Us</div>
@@ -29,7 +30,7 @@ function Contact() {
               <img src={locationL} alt="Location Icon" />
             </span>
             <strong>Address:</strong>
-            <span className="detail-text">24/8, Green Road,Trincomalee.</span>
+            <span className="detail-text">24/8, Green Road, Trincomalee.</span>
           </div>
 
           <div className="contact-detailP">
@@ -55,30 +56,24 @@ function Contact() {
               <a href="mailto:dreamtrillions100@gmail.com">dreamtrillions100@gmail.com</a>
             </span>
           </div>
-
         </div>
       </div>
 
-
-
-
-      <div class="container">
+      <div className="container">
         <h2>Want to be a partner with us?</h2>
         <p>If you're interested in our partnership and would like to find out some more information, one of our advisors is excited to help.</p>
-        <button class="cta-button">Get Started</button>
+        <button className="cta-button">Get Started</button>
       </div>
-      {/* Last Column: White Logo */}
+
       <div className="white-logocontainer">
         <div className="white-logo">
           <img src={whitelogo} alt="White Logo" />
         </div>
       </div>
+
       <div className="fbwhatsappweb">
         <div className="icon-container">
-          <a
-            href="https://web.facebook.com/profile.php?id=61565691174954"
-
-          >
+          <a href="https://web.facebook.com/profile.php?id=61565691174954">
             <img src={facebook} alt="Facebook Icon" />
           </a>
         </div>
@@ -94,10 +89,10 @@ function Contact() {
         <div className="icon-container">
           <img src={website} alt="Website Icon" />
         </div>
-
       </div>
-      <div class="middle-content">
-        <p className='rights'>All rights reserved to Dream Trillions (Pvt) Ltd</p>
+
+      <div className="middle-content">
+        <p className="rights">All rights reserved to Dream Trillions (Pvt) Ltd</p>
       </div>
     </div>
   );

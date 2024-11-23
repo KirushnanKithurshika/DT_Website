@@ -6,16 +6,20 @@
   width: 100%;
   height: 100vh;
   display: grid;
-  grid-template-columns: 1fr 1fr 0.8fr; /* 3 columns */
-  grid-template-rows: 4fr 2fr 0.4fr; /* 3 rows */
+  grid-template-columns: 1fr 1fr 0.8fr;
+  /* 3 columns */
+  grid-template-rows: 4fr 2fr 0.4fr;
+  /* 3 rows */
   gap: 20px;
   align-items: flex-end;
 }
 
 .contact-heading {
   display: grid;
-  grid-column: 1; /* Place contact details in the first column */
-  grid-row: 2; /* Place contact details in the second row */
+  grid-column: 1;
+  /* Place contact details in the first column */
+  grid-row: 2;
+  /* Place contact details in the second row */
   color: #fff;
   align-items: center;
   font-size: 46px;
@@ -25,8 +29,10 @@
 }
 
 .contact-details {
-  grid-column: 1/2; /* Place contact details in the first column */
-  grid-row: 2; /* Place contact details in the second row */
+  grid-column: 1/2;
+  /* Place contact details in the first column */
+  grid-row: 2;
+  /* Place contact details in the second row */
   display: grid;
   align-items: center;
   margin-left: 30px;
@@ -36,12 +42,16 @@
 }
 
 .white-logocontainer {
-  padding:20px;
-  grid-column: 3; /* Place logo in the third column */
-  grid-row: 2; /* Place logo in the second row */
+  padding: 20px;
+  grid-column: 3;
+  /* Place logo in the third column */
+  grid-row: 2;
+  /* Place logo in the second row */
   display: flex;
-  justify-content: center; /* Center horizontally */
-  align-items: center; /* Center vertically */
+  justify-content: center;
+  /* Center horizontally */
+  align-items: center;
+  /* Center vertically */
   width: 100%;
   height: 100%;
 }
@@ -69,35 +79,45 @@
   border: 2px solid white;
   border-radius: 50%;
   margin-right: 10px;
-  transition: all 0.3s ease;  /* Smooth transition for hover effects */
+  transition: all 0.3s ease;
+  /* Smooth transition for hover effects */
 }
 
 .icon-container:hover {
-  transform: scale(1.1);             /* Slightly scale the icon on hover */
-  background-color: rgba(0, 0, 0, 0.1); /* Change background color (optional) */
-  border-radius: 50%;               /* Optional: rounded background for a more active effect */
-  gap: 10px; 
+  transform: scale(1.1);
+  /* Slightly scale the icon on hover */
+  background-color: rgba(0, 0, 0, 0.1);
+  /* Change background color (optional) */
+  border-radius: 50%;
+  /* Optional: rounded background for a more active effect */
+  gap: 10px;
 
 }
 
 .icon-container img {
-  transition: all 0.3s ease;  /* Smooth transition for the icon itself */
+  transition: all 0.3s ease;
+  /* Smooth transition for the icon itself */
 }
 
 .icon-container:hover img {
-  filter: brightness(1.3);  /* Brighten the icon on hover */
+  filter: brightness(1.3);
+  /* Brighten the icon on hover */
 }
+
 .icon-container img {
-  width: 45px; 
+  width: 45px;
 }
+
 strong {
-  margin-right: 20px; /* Add space between "Phone:" and the number */
+  margin-right: 20px;
+  /* Add space between "Phone:" and the number */
 }
-.contact-detailP{
-  font-size: 22px; 
-  color: #fff; 
-  margin: 20px 0; 
-  display: flex; 
+
+.contact-detailP {
+  font-size: 22px;
+  color: #fff;
+  margin: 20px 0;
+  display: flex;
   align-items: center;
 }
 
@@ -112,41 +132,44 @@ a:hover {
 
 /* Footer content in last grid */
 .middle-content {
-  grid-column: 1 / 4; /* Span across all 3 columns in the last row */
-  grid-row: 3; /* Place it in the third row */
+  grid-column: 1 / 4;
+  /* Span across all 3 columns in the last row */
+  grid-row: 3;
+  /* Place it in the third row */
   padding: 20px;
   background-color: black;
   display: flex;
   justify-content: center;
   align-items: center;
   color: #fff;
-  border-top: 2px solid white; /* Add a white top border */
+  border-top: 2px solid white;
+  /* Add a white top border */
   font-size: 16px;
   text-align: center;
 }
 
 .middle-content p {
-  margin: 0; 
+  margin: 0;
 }
 
 .Authorized-container {
   margin-left: 30px;
   grid-column: 1;
   font-size: 28px;
-  color:white;
+  color: white;
   grid-row: 1;
   display: flex;
   flex-direction: column;
-  align-items: flex-start; 
-  text-align: left; 
-  gap: 40px; 
+  align-items: flex-start;
+  text-align: left;
+  gap: 40px;
   padding: 20px;
 }
 
 .authorized-logos {
   display: flex;
-  justify-content: flex-start; 
-  gap: 40px; 
+  justify-content: flex-start;
+  gap: 40px;
   align-items: center;
 }
 
@@ -161,12 +184,12 @@ a:hover {
 }
 
 .fbwhatsappweb {
-  
+
   grid-column: 2;
   grid-row: 2;
-  height:100%;
+  height: 100%;
   display: flex;
-  justify-content:center;
+  justify-content: center;
   gap: 40px;
   align-items: center;
 }
@@ -178,31 +201,31 @@ a:hover {
 }
 
 .container {
-  top:50px;
-  display: flex;              
-  flex-direction: column;     
-  justify-content:center; 
-  align-items: center;         
-  grid-column: 2/3;            
+  top: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  grid-column: 2/3;
   grid-row: 1;
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 15px;
-  height: 100%;               
+  height: 100%;
 }
 
 h2 {
-  color:#009abf;
+  color: #009abf;
   font-size: 40px;
-  margin-bottom: 40px;         
+  margin-bottom: 40px;
   text-align: center;
 }
 
 p {
-  color:rgb(75, 67, 67);
+  color: rgb(75, 67, 67);
   text-align: center;
   font-size: 16px;
-  margin-bottom: 40px;         
+  margin-bottom: 40px;
 }
 
 .cta-button {
@@ -224,51 +247,57 @@ p {
   background-color: #009abf;
 }
 
-.rights{
-  color:rgb(245, 241, 241);
+.rights {
+  color: rgb(245, 241, 241);
   text-align: center;
   font-size: 16px;
 }
+
 @media (max-width: 1500px) {
-  .Authorized-container{
-    font-size:28px;
-  } 
+  .Authorized-container {
+    font-size: 28px;
+
+  }
 
   .authorized-logos img {
     max-width: 100px;
   }
-  .contact-heading{
-    font-size:32px;
+
+  .contact-heading {
+    font-size: 32px;
   }
-  .contact-detailP{
+
+  .contact-detailP {
     font-size: 18px;
   }
-  
+
   .white-logo img {
     max-width: 100%;
     object-fit: contain;
   }
-  .contact-container{
-    height:120vh;
+
+  .contact-container {
+    height: 120vh;
     background-size: cover;
-  background-position: bottom left;
-  overflow: hidden;
+    background-position: bottom left;
+    overflow: hidden;
   }
+
   h2 {
-   
+
     font-size: 32px;
-    margin-bottom: 40px;         
+    margin-bottom: 40px;
     text-align: center;
   }
-  
+
   p {
-    color:rgb(245, 241, 241);
+    color: rgb(245, 241, 241);
     text-align: center;
     font-size: 16px;
-    margin-bottom: 40px;         
+    margin-bottom: 40px;
   }
-  
-  
+
+
   .cta-button {
     background-color: #c3c306;
     color: white;
@@ -282,33 +311,40 @@ p {
     margin: 0 auto;
     text-align: center;
   }
+
   .container {
-    justify-content:end;
+    justify-content: end;
   }
-  
-  
+
+
 }
 
 @media (max-width: 1200px) {
   .contact-container {
-    width:100%;
-    overflow:scroll;
+    width: 100%;
+    overflow: scroll;
     align-items: center;
     justify-content: center;
-    grid-template-columns: 1fr; /* 1 column on small screens */
-    grid-template-rows: auto; /* Automatically adjust rows */
-    gap: 15px; /* Optional: Adjust the gap between elements for small screens */
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    gap: 15px;
+ 
   }
-
+  .Authorized-container{
+    margin-left: 10px;
+  }
   .contact-heading,
   .contact-details,
   .white-logocontainer,
   .middle-content,
   .Authorized-container,
   .authorized-logos,
-  .fbwhatsappweb ,.container{
-    grid-column: 1; /* All content spans across 1 column */
-    grid-row: auto; /* Rows automatically adjust */
+  .fbwhatsappweb,
+  .container {
+    grid-column: 1;
+    /* All content spans across 1 column */
+    grid-row: auto;
+    /* Rows automatically adjust */
   }
 
   /* Adjust font sizes and layout for better readability */
@@ -322,19 +358,24 @@ p {
   }
 
   .white-logo img {
-  
-    width:30%;
-   
+
+    width: 30%;
+
+  }
+
+  .contact-details {
+    margin: 0px;
   }
 
   .container {
-    justify-content: flex-start; /* Adjust container layout */
+    justify-content: flex-start;
+    /* Adjust container layout */
     padding: 0 40px;
   }
 
   h2 {
     font-size: 28px;
-    color:#e7f9fe;
+    color: #e7f9fe;
     margin-bottom: 20px;
 
   }
@@ -352,24 +393,33 @@ p {
     font-size: 0.9rem;
     margin-bottom: 20px;
   }
+
   .cta-button:hover {
-    color:white;
+    color: white;
     background-color: #000000;
   }
 
-  .contact-heading{
+  .contact-heading {
     font-size: 24px;
   }
+
+  .white-logocontainer {
+    padding: 0px;
+  }
 }
+
 @media (max-width: 420px) {
   .contact-container {
-    width:100%;
-  
+    width: 100%;
+
     align-items: center;
     justify-content: center;
-    grid-template-columns: 1fr; /* 1 column on small screens */
-    grid-template-rows: auto; /* Automatically adjust rows */
-    gap: 15px; /* Optional: Adjust the gap between elements for small screens */
+    grid-template-columns: 1fr;
+    /* 1 column on small screens */
+    grid-template-rows: auto;
+    /* Automatically adjust rows */
+    gap: 15px;
+    /* Optional: Adjust the gap between elements for small screens */
   }
 
   .contact-heading,
@@ -378,9 +428,12 @@ p {
   .middle-content,
   .Authorized-container,
   .authorized-logos,
-  .fbwhatsappweb ,.container{
-    grid-column: 1; /* All content spans across 1 column */
-    grid-row: auto; /* Rows automatically adjust */
+  .fbwhatsappweb,
+  .container {
+    grid-column: 1;
+    /* All content spans across 1 column */
+    grid-row: auto;
+    /* Rows automatically adjust */
   }
 
   /* Adjust font sizes and layout for better readability */
@@ -393,18 +446,19 @@ p {
     font-size: 14px;
   }
 
-  .white-logo img {
-    display:none;
+  .contact-details {
+    margin: 0px;
   }
 
   .container {
-    justify-content: flex-start; /* Adjust container layout */
+    justify-content: flex-start;
+    /* Adjust container layout */
     padding: 0 10px;
   }
 
   h2 {
     font-size: 20px;
-    color:#e7f9fe;
+    color: #e7f9fe;
     margin-bottom: 20px;
   }
 
@@ -423,13 +477,16 @@ p {
   }
 
 
-  .authorized-logos img{
+  .authorized-logos img {
     max-width: 80px;
   }
 
   .icon-container {
-    width:40px;
-    height:40px;
+    width: 40px;
+    height: 40px;
 
+  }
+  .white-logocontainer {
+    padding: 0px;
   }
 }
