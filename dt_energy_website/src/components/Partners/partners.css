@@ -4,7 +4,7 @@
   display: flex;
   justify-content: center;
   overflow: visible;
-}
+  margin-bottom: 100px;}
 
 .partners-grid {
   display: grid;
@@ -162,6 +162,7 @@
 @media (max-width: 768px) {
   .partners-container {
     margin-top:30px;
+    margin-bottom: 30px;
     
   }
   .partners-content-container {

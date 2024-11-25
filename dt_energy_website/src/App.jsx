@@ -11,6 +11,7 @@ import Partners from './components/Partners/partners';
 import Getaquote from './components/getaquote/getaquote';
 import BankPartners from './components/Bankingpartens/bankingpartners';
 import Contact from './components/Contact/contact';
+import ProjectShowcase from './components/Projects/projects';
 
 function App() {
   const [count, setCount] = useState(0)
@@ -24,6 +25,7 @@ function App() {
       <Route path='/getaquote' element={<Getaquote/>}/>
       <Route path='/bankpartner' element={<BankPartners/>}/>
       <Route path='/contactfooter' element={<Contact/>}/>
+      <Route path='/projects' element={<ProjectShowcase/>}/>
          </Routes>
 </BrowserRouter>
        

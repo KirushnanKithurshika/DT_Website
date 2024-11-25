@@ -6,6 +6,9 @@ import Introdt from '../../components/IntroDT/introdt';
 import Services from '../../components/Services/services';
 import Partners from '../../components/Partners/partners';
 import BankPartners from '../../components/Bankingpartens/bankingpartners';
+import Contact from '../../components/Contact/contact';
+import Getaquote from '../../components/getaquote/getaquote';
+import ProjectShowcase from '../../components/Projects/projects';
 
 function Homepage() {
   return (
@@ -29,8 +32,11 @@ function Homepage() {
     </div>
     <Introdt/>
     <Services/>
+    <ProjectShowcase/>
+    <Getaquote/>
     <Partners/>
     <BankPartners/>
+    <Contact/>
     </div>
   );
 }

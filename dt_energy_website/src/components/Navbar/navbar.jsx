@@ -66,7 +66,7 @@ const Navbar = () => {
       <nav className="navbar-links">
         <a href="#">Home</a>
         <a href="#">Products</a>
-        <a href="#">Solutions</a>
+        <a href="#">Services</a>
         <a href="#">Projects</a>
         <a href="#">News</a>
         <a href="#">Contact Us</a>

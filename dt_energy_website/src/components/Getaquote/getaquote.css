@@ -1,3 +1,5 @@
+
+
 .Getaquote-container {
     position: relative;
     background-image: url('../../assets/getaquoteBG.jpeg');
@@ -210,7 +212,7 @@
     }
     .Getaquote-container {
         height: 80vh;
-        margin: 20px;
+        margin: 30px;
         border-radius: 20px;
     }
 
@@ -264,7 +266,7 @@
     }
     .Getaquote-container {
         height: 80vh;
-        margin: 20px;
+        margin: 30px;
         border-radius: 20px;
     }
 
@@ -324,7 +326,7 @@
     }
     .Getaquote-container {
         height: 90vh;
-        margin: 20px;
+        margin: 30px;
         border-radius: 20px;
     }
     .right{
@@ -422,7 +424,7 @@
         bottom: 10px;}
 
         .Getaquote-container {
-            margin:10px;
+            margin:30px;
         }
 
     }

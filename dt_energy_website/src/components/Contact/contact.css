@@ -1,4 +1,5 @@
 .contact-container {
+  margin-top: 100px;
   background-image: url('../../assets/FooterBG.png');
   background-size: cover;
   background-position: bottom;
@@ -127,7 +128,7 @@ a {
 }
 
 a:hover {
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 /* Footer content in last grid */
