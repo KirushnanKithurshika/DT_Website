@@ -1,13 +1,13 @@
 import React from 'react';
 import backgroundImage from '../../assets/BG.jpg';
 import Navbar from '../../components/Navbar/navbar';
-import './homepage.css';
+import './product.css';
 
-function Homepage() {
+function Product() {
   return (
-    <div className='home_container'> 
+    <div className='product-container'> 
      <div
-      className="homepage-background"
+      className="product-background"
       style={{
         backgroundImage: `url(${backgroundImage})`
       }}
@@ -22,4 +22,4 @@ function Homepage() {
   );
 }
 
-export default Homepage;
+export default Product;
