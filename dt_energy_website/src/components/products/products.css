@@ -1,0 +1,34 @@
+.product-description-container {
+    display: grid;
+    grid-template-rows: auto 1fr; /* One row for the header and another for the details */
+    gap: 20px; /* Adds spacing between grid elements */
+    padding: 20px;
+}
+
+.product-head {
+    font-size: 22px;
+    font-weight: bold;
+    color: #0e1c7a;
+    text-align: justify;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.product-details {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two columns for images */
+    grid-template-rows: repeat(3, 1fr); /* Three rows, one for each pair of items */
+    gap: 20px; /* Adds space between grid items */
+}
+
+.product-details div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.product-image {
+    width: 400px; /* Adjust size as needed */
+    height: auto;
+    
+}

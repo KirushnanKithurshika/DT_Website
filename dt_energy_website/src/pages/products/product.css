@@ -1,6 +1,7 @@
-.product-container{
+.product-container {
     display: grid;
-    grid-template-columns: 1fr; 
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
 }
 
 
@@ -10,10 +11,13 @@
     grid-template-rows: 200px auto;
     background-size: cover;
     background-position: center;
-    height: 100vh;
+    height: 75vh;
     width: 100%;
     position: relative;
-    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
 }
 
 .product-background::before {
@@ -25,7 +29,7 @@
     height: 100%;
     background-color: rgba(17, 17, 17, 0.5);
     z-index: 1;
-    
+
 }
 
 .nav_container {
@@ -37,15 +41,90 @@
     margin-top: 20px;
 }
 
+.Productheadsubhead{
+    z-index: 1; 
+}
+.Product {
+    padding:20px;
+    background:blur;
+    font-size: 60px; /* Adjust size as needed */
+    color: rgb(255, 255, 255); /* Ensure visibility */
+    font-weight: bold; /* Make it bold */
+    text-align: center;
+  }
+.product-subheading{
+    padding:20px;
+    font-size: 20px; 
+    color: rgb(255, 255, 255); 
+    font-weight: bold; 
+    text-align: center;
+
+}
 @media (max-width: 1500px) {
     .product-background {
-        height: 75vh;
+        height: 50vh;
         grid-template-rows: 150px auto;
     }
+
 }
+
 @media (max-width: 768px) {
     .product-background {
         height: 50vh;
         grid-template-rows: 150px auto;
+    }
+
+    .nav_container {
+        position: relative;
+        grid-row: 1;
+        /* Position navbar in the first row */
+        z-index: 2;
+        /* Ensure the navbar stays above the dark overlay */
+        padding: 0 20px;
+        box-sizing: border-box;
+    }
+
+    .Product {
+        z-index: 2;
+        background:blur;
+        font-size: 36px; /* Adjust size as needed */
+        color: rgb(255, 255, 255); /* Ensure visibility */
+        font-weight: bold; /* Make it bold */
+        text-align: center;
+      }
+      .product-subheading{
+       
+        font-size: 16px;
+       
+    
+    }
+}
+
+@media (max-width: 420px) {
+    .product-background {
+        height: 50vh;
+        grid-template-rows: 100px auto;
+    }
+
+    .nav_container {
+        position: relative;
+        grid-row: 1;
+        z-index: 2;
+        padding: 0 5px;
+        box-sizing: border-box;
+    }
+    .Product {
+        z-index: 2;
+        background:blur;
+        font-size: 28px; /* Adjust size as needed */
+        color: rgb(255, 255, 255); /* Ensure visibility */
+        font-weight: bold; /* Make it bold */
+        text-align: center;
+      }
+      .product-subheading{
+        
+        font-size: 12px; /* Adjust size as needed */
+        
+    
     }
 }
