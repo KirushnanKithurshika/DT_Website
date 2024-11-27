@@ -17,7 +17,7 @@ function Getaquote() {
   return (
     <div className='Getaquote-container'>
       <div className="getaquote-content">
-        <div className="left" data-aos="fade-left">
+        <div className="left"  data-aos="fade-up">
           <div className='up'>
             <span className='headgetaquote'>Get a Quote</span>
           </div>
@@ -45,7 +45,7 @@ function Getaquote() {
           </div>
         </div>
 
-        <div className="right" data-aos="fade-right">
+        <div className="right"  data-aos="fade-up">
           <form className="transparent-form">
             <div className="form-group">
               <label htmlFor="name">Name</label>

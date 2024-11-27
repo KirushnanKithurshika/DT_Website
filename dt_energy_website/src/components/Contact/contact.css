@@ -43,7 +43,6 @@
 }
 
 .white-logocontainer {
-  padding: 20px;
   grid-column: 3;
   /* Place logo in the third column */
   grid-row: 2;

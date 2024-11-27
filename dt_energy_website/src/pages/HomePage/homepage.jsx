@@ -37,6 +37,7 @@ function Homepage() {
     <Partners/>
     <BankPartners/>
     <Contact/>
+
     </div>
   );
 }

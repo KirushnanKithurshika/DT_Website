@@ -70,7 +70,7 @@ const ProjectShowcase = () => {
             />
           ))}
         </div>
-        <div className="details-box" data-aos="fade-left">
+        <div className="details-box"  data-aos="fade-up">
           <h2>5 kW Roof Top Solar Panel Installation</h2>
           <p><strong>City:</strong> Trincomalee</p>
           <p><strong>Units:</strong> 500-600 per month</p>
@@ -97,7 +97,7 @@ const ProjectShowcase = () => {
             />
           ))}
         </div>
-        <div className="details-box" data-aos="fade-left">
+        <div className="details-box"  data-aos="fade-up">
           <h2>5 kW Roof Top Solar Panel Installation</h2>
           <p><strong>City:</strong> China Bay</p>
           <p><strong>Units:</strong> 500-600 per month</p>
@@ -124,7 +124,7 @@ const ProjectShowcase = () => {
             />
           ))}
         </div>
-        <div className="details-box" data-aos="fade-left">
+        <div className="details-box"  data-aos="fade-up">
           <h2>40 kW Roof Top Solar Panel Installation</h2>
           <p><strong>City:</strong> Trincomalee Town</p>
           <p><strong>Units:</strong> 4400-4600 per month</p>

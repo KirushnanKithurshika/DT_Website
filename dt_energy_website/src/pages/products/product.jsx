@@ -2,6 +2,9 @@ import React from 'react';
 import backgroundImagepProduct from '../../assets/PageBG.jpg';
 import Navbar from '../../components/Navbar/navbar';
 import './product.css';
+import Products from '../../components/products/products';
+import Partners from '../../components/Partners/partners';
+import Contact from '../../components/Contact/contact';
 
 function Product() {
   return (
@@ -20,6 +23,13 @@ function Product() {
       <div className='product-subheading'>We offer quality solar panels, inverters, and batteries for reliable and sustainable energy solutions.</div>
     </div>
     </div>
+    <Products/>
+    <Partners/>
+    <Contact/>
+   
+  
+    
+  
    
     </div>
   );

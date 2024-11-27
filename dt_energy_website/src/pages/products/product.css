@@ -1,7 +1,6 @@
 .product-container {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
 }
 
 
@@ -51,6 +50,7 @@
     color: rgb(255, 255, 255); /* Ensure visibility */
     font-weight: bold; /* Make it bold */
     text-align: center;
+    
   }
 .product-subheading{
     padding:20px;

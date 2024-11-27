@@ -154,13 +154,24 @@ body {
   left: 0;
   width: 0;
   height: 3px;
-  background-color: #f1dbf1;
+  background-color: #ffffff;
   transition: width 0.3s ease;
 }
 
 .navbar-links a:hover::after {
   width: 100%;
 }
+
+
+.navbar-links .active {
+  color: #ffffff;  
+  font-weight: bold;
+}
+
+.navbar-links .active::after {
+  width: 100%;  
+}
+
 
 @media (max-width: 1200px) {
   .logo-image {

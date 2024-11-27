@@ -1,4 +1,5 @@
 .product-description-container {
+    margin-top: 100px;
     display: grid;
     grid-template-rows: auto 1fr; /* One row for the header and another for the details */
     gap: 20px; /* Adds spacing between grid elements */
@@ -16,9 +17,9 @@
 
 .product-details {
     display: grid;
-    grid-template-columns: 1fr 1fr; /* Two columns for images */
-    grid-template-rows: repeat(3, 1fr); /* Three rows, one for each pair of items */
-    gap: 20px; /* Adds space between grid items */
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: repeat(3, 1fr); 
+    gap: 20px;
 }
 
 .product-details div {
@@ -31,4 +32,36 @@
     width: 400px; /* Adjust size as needed */
     height: auto;
     
+}
+
+.classtext{
+    padding:20px;
+    font-size: 22px;
+    color: rgb(90, 91, 92);
+    text-align: justify;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    transition: background-color 0.3s ease; /* Smooth transition for background color */
+}
+
+
+.classtext:hover {
+  background-color: rgba(198, 221, 245, 0.2); 
+}
+@media screen and (max-width: 1200px) {
+    .product-description-container {
+        margin-top: 30px;}
+
+
+}
+@media screen and (max-width: 768px) {
+    .product-description-container {
+        margin-top: 10px;}
+
+
+}
+@media screen and (max-width: 420px) {
+    .product-description-container {
+        margin-top: 10px;}
+
+
 }

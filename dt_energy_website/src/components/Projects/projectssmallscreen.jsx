@@ -49,7 +49,7 @@ const ProjectShowcasesmall = () => {
       </div>
 
       {/* Buttons to change project sets */}
-      <div className="project-buttons" data-aos="fade-left">
+      <div className="project-buttons" data-aos="fade-up">
         <button onClick={() => setActiveSet(1)} className={activeSet === 1 ? 'active' : ''}> 1</button>
         <button onClick={() => setActiveSet(2)} className={activeSet === 2 ? 'active' : ''}>2</button>
         <button onClick={() => setActiveSet(3)} className={activeSet === 3 ? 'active' : ''}>3</button>
