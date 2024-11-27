@@ -1,8 +1,8 @@
 .product-description-container {
-    margin-top: 100px;
+    margin-top: 40px;
     display: grid;
-    grid-template-rows: auto 1fr; /* One row for the header and another for the details */
-    gap: 20px; /* Adds spacing between grid elements */
+    grid-template-rows: auto 1fr; 
+    gap: 20px; 
     padding: 20px;
 }
 
