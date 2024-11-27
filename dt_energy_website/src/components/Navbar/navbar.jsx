@@ -73,7 +73,7 @@ const Navbar = () => {
           Products
         </NavLink>
         <NavLink 
-          to="/services" 
+          to="/service" 
           className={({ isActive }) => isActive ? 'active' : ''} 
         >
           Services

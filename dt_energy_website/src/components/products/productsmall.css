@@ -9,10 +9,10 @@
 .products-head {
     font-size: 20px;
     font-weight: bold;
-    color: #0e1c7a;
+    color:  #156181;;
     text-align: justify;
-    padding: 10px;
     margin-bottom: 20px;
+
 }
 
 .products-details {
@@ -79,8 +79,7 @@
     }
 
     .products-head {
-        font-size: 18px;
-        text-align: center; /* Center text for better readability */
+        font-size: 16px;
         padding: 10px;
     }
 

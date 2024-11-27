@@ -6,6 +6,7 @@ import Homepage from './pages/HomePage/homepage';
 import Product from './pages/products/product';
 import Products from './components/products/products';
 import Contact from './components/Contact/contact';
+import Servicepage from './pages/Servicepage/servicepage';
 
 function App() {
   const [count, setCount] = useState(0)
@@ -15,8 +16,7 @@ function App() {
      <Routes>
       <Route path='/' element={<Homepage/>}/>
       <Route path='/product' element={<Product/>}/>
-      <Route path='/products' element={<Products/>}/>
-      <Route path='/contact' element={<Contact/>}/>
+      <Route path='/service'element={<Servicepage/>}/>
          </Routes>
 </BrowserRouter>
        

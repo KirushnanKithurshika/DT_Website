@@ -7,9 +7,10 @@
 }
 
 .product-head {
+    line-height: 1.6;
     font-size: 22px;
     font-weight: bold;
-    color: #0e1c7a;
+    color:  #156181;
     text-align: justify;
     padding: 20px;
     margin-bottom: 20px;
@@ -35,6 +36,7 @@
 }
 
 .classtext{
+    line-height: 1.6;
     padding:20px;
     font-size: 22px;
     color: rgb(90, 91, 92);
