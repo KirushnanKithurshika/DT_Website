@@ -25,8 +25,9 @@ function Product() {
     </div>
     <Products/>
     <Partners/>
-    <Contact/>
-   
+    <div id="contact-section">
+      <Contact />
+    </div>
   
     
   

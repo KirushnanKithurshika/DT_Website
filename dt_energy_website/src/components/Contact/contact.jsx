@@ -12,7 +12,7 @@ import whitelogo from '../../assets/whitelogo.png';
 
 function Contact() {
   return (
-    <div className="contact-container">
+    <div id="contact-section" className="contact-container">
       <div className="Authorized-container">
         <div className="contact-heading">Authorized by</div>
         <div className="authorized-logos">

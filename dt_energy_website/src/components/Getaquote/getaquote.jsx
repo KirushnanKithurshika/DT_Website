@@ -15,8 +15,8 @@ function Getaquote() {
   }, []);
 
   return (
-    <div className='Getaquote-container'>
-      <div className="getaquote-content">
+    <div className='Getaquote-container'  data-aos="fade-up">
+      <div className="getaquote-content"  data-aos="fade-up">
         <div className="left"  data-aos="fade-up">
           <div className='up'>
             <span className='headgetaquote'>Get a Quote</span>

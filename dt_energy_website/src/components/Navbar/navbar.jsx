@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import './Navbar.css';
-import { Link, NavLink } from 'react-router-dom'; // Import NavLink
+
+import { NavLink } from 'react-router-dom'; // Import NavLink
+import { HashLink } from 'react-router-hash-link'; // Import HashLink
 import DTlogo from '../../assets/dtnlogo.png';
 import { FaEnvelope, FaPhoneAlt, FaBars, FaTimes } from 'react-icons/fa';
 import Navsubarmobileview from './navsubbar_vertical'; // Ensure mobile view is correctly imported
@@ -30,9 +32,9 @@ const Navbar = () => {
     <header className="navbar-container">
       <div className="navbar-grid">
         <div className="navbar-logo">
-          <Link to="/">
+          <NavLink to="/">
             <img src={DTlogo} alt="DT Energy Logo" className="logo-image" />
-          </Link>
+          </NavLink>
         </div>
 
         <div className="navbar-contactnumber">
@@ -62,40 +64,41 @@ const Navbar = () => {
       <nav className="navbar-links">
         <NavLink 
           to="/" 
-          className={({ isActive }) => isActive ? 'active' : ''} 
+          className={({ isActive }) => (isActive ? 'active' : '')}
         >
           Home
         </NavLink>
         <NavLink 
           to="/product" 
-          className={({ isActive }) => isActive ? 'active' : ''} 
+          className={({ isActive }) => (isActive ? 'active' : '')}
         >
           Products
         </NavLink>
         <NavLink 
           to="/service" 
-          className={({ isActive }) => isActive ? 'active' : ''} 
+          className={({ isActive }) => (isActive ? 'active' : '')}
         >
           Services
         </NavLink>
         <NavLink 
           to="/projects" 
-          className={({ isActive }) => isActive ? 'active' : ''} 
+          className={({ isActive }) => (isActive ? 'active' : '')}
         >
           Projects
         </NavLink>
         <NavLink 
-          to="/news" 
-          className={({ isActive }) => isActive ? 'active' : ''} 
+          to="/careers" 
+          className={({ isActive }) => (isActive ? 'active' : '')}
         >
-          News
+          Careers
         </NavLink>
-        <NavLink 
-          to="/contact-us" 
-          className={({ isActive }) => isActive ? 'active' : ''} 
+        <HashLink 
+          smooth 
+          to="/#contact-section" 
+          className="nav-link"
         >
           Contact Us
-        </NavLink>
+        </HashLink>
       </nav>
     </header>
   );

@@ -36,8 +36,9 @@ function Homepage() {
     <Getaquote/>
     <Partners/>
     <BankPartners/>
-    <Contact/>
-
+    <div id="contact-section">
+      <Contact />
+    </div>
     </div>
   );
 }

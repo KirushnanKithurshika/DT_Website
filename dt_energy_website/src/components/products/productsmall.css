@@ -8,6 +8,7 @@
 
 .products-head {
     font-size: 20px;
+    line-height: 1.6;
     font-weight: bold;
     color:  #156181;;
     text-align: justify;
@@ -32,11 +33,11 @@
 }
 
 .classtexts {
+    line-height: 1.6;
     padding: 10px;
     font-size: 20px;
     color: rgb(90, 91, 92);
     text-align: justify;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     transition: background-color 0.3s ease; /* Smooth transition for background color */
 }
 

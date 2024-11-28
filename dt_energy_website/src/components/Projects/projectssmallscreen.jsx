@@ -45,7 +45,7 @@ const ProjectShowcasesmall = () => {
   return (
     <div className="projects">
       <div className="projectheading" data-aos="fade-up">
-        <span>Our Finished Solar Projects</span>
+        <span>Some of our finished Solar Projects</span>
       </div>
 
       {/* Buttons to change project sets */}
