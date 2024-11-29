@@ -176,6 +176,30 @@
     background-color: #111010;
     color:white;
   }
+
+
+  /* Add this to your CSS */
+.form-message {
+    margin-top: 20px;
+    padding: 10px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    color: #0e91ab;
+    border-radius: 5px;
+    background-color: #bcbebc; /* Green for success */
+  }
+  
+  .form-message.error {
+    background-color: #f44336; /* Red for error */
+  }
+  
+  /* Optional: Button style for disabled state */
+  button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
   @media (max-width: 1500px) and (min-width: 1024px) {
     .headgetaquote {
         font-size:28px; 

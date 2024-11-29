@@ -87,7 +87,7 @@ const Navbar = () => {
           Projects
         </NavLink>
         <NavLink 
-          to="/careers" 
+          to="/career" 
           className={({ isActive }) => (isActive ? 'active' : '')}
         >
           Careers
