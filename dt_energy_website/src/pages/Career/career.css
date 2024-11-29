@@ -60,6 +60,16 @@
     text-align: center;
 
 }
+
+.career-head{
+    line-height: 1.6;
+    font-size: 22px;
+    font-weight: bold;
+    color:  #156181;
+    text-align: justify;
+    padding: 20px;
+    margin-bottom: 20px;
+}
 @media (max-width: 1500px) {
     .career-background {
         height: 50vh;
@@ -72,6 +82,11 @@
     .career-background {
         height: 50vh;
         grid-template-rows: 150px auto;
+    }
+    .career-head {
+        margin-top: 40px;
+        font-size: 16px;
+        padding: 10px;
     }
 
     .nav_container {
@@ -97,5 +112,15 @@
         font-size: 16px;
        
     
+    }
+}
+
+
+@media screen and (max-width: 420px) {
+
+    .career-head{
+        font-size: 14px;
+        text-align: center; 
+        padding: 10px;
     }
 }

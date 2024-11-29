@@ -45,7 +45,8 @@ function Getaquote() {
         address: '',
         email: '',
         message: '',
-      });  // Reset the form
+      });  
+      setTimeout(() => setMessage(''), 2000);
     } catch (error) {
       console.error('Error sending email:', error);
       setMessage('There was an issue sending your request. Please try again.');  // Error message
@@ -85,7 +86,7 @@ function Getaquote() {
 
         <div className="right" data-aos="fade-up">
           <form className="transparent-form" onSubmit={handleSubmit}>
-            <div className="form-group">
+            <div className="form-groupA">
               <label htmlFor="name">Name</label>
               <input
                 type="text"
@@ -96,7 +97,7 @@ function Getaquote() {
                 required
               />
             </div>
-            <div className="form-group">
+            <div className="form-groupA">
               <label htmlFor="phone">Phone Number</label>
               <input
                 type="tel"
@@ -107,7 +108,7 @@ function Getaquote() {
                 required
               />
             </div>
-            <div className="form-group">
+            <div className="form-groupA">
               <label htmlFor="address">Address</label>
               <input
                 type="text"
@@ -118,7 +119,7 @@ function Getaquote() {
                 required
               />
             </div>
-            <div className="form-group">
+            <div className="form-groupA">
               <label htmlFor="email">Email</label>
               <input
                 type="email"
@@ -128,7 +129,7 @@ function Getaquote() {
                 onChange={handleChange}
               />
             </div>
-            <div className="form-group">
+            <div className="form-groupA">
               <label htmlFor="message">Message</label>
               <textarea
                 id="message"
@@ -140,10 +141,11 @@ function Getaquote() {
               ></textarea>
             </div>
             <button type="submit" disabled={isSubmitting}>Get a Quote</button>
-            {message && <div className="form-message">{message}</div>}
-          </form>
+           </form>
         </div>
       </div>
+      {message && <div className="form-message">{message}</div>}
+          
     </div>
   );
 }
