@@ -1,6 +1,6 @@
 import React from 'react';
-import backgroundImagepProduct from '../../assets/PageBG.jpg';
 import Navbar from '../../components/Navbar/navbar';
+import backgroundImagepProduct from '../../assets/PageBG.jpg';
 import './product.css';
 import Products from '../../components/products/products';
 import Partners from '../../components/Partners/partners';

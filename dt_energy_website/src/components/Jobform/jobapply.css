@@ -112,16 +112,99 @@
     transition: all 0.3s ease;
   }
   
-  @media (max-width: 768px){
-    .job-description-container {
-        padding: 10px;
-      }
-    .job-requirements h4 {
-        font-size: 18px; /* Further reduce font size */
-        margin-bottom: 10px;
+  @media (max-width: 768px) {
+    .job-positions-container {
+      display: flex;
+      align-items: center;
+      flex-direction: column; /* Stack the content vertically */
+      width: 100%;
+    
     }
+  
+    .job-positions-container h2 {
+      font-size: 22px;
+      text-align:justify; /* Center the heading */
+    }
+  
+    .job-positions-table {
+   
+      width: 100%;
+      max-width: 400px; /* Optional: Limit the maximum width of the table */
+      overflow-x: auto;
+      margin: 0 auto; /* Center horizontally */
+    }
+  
+    .job-positions-table thead {
+      display: none; /* Hide the header row */
+    }
+  
+    .job-positions-table tr {
+     
+      margin-bottom: 10px;
+    }
+  
+    .job-positions-table td {
+      display: flex;
+      justify-content:center;
+      align-items: center;
+      padding: 12px 15px;
+      font-size: 15px;
+      border: 1px solid #ffffff;
+    }
+  
+    .job-positions-table td::before {
+      content: attr(data-label);
+      font-weight: bold;
+      text-align: left;
+    }
+  }
 
-    .job-requirements li {
-        font-size: 15px; /* Further reduce font size */
+  @media (max-width: 420px) {
+    .job-positions-container {
+      display: flex;
+      align-items: center;
+      flex-direction: column; /* Stack the content vertically */
+      width: 80%;
+     
+    }
+  
+    .job-positions-container h2 {
+      font-size: 18px;
+      text-align: justify; /* Justify the heading text */
+    }
+  
+    .job-positions-table {
+      width: 100%;
+      max-width: 300px; /* Limit the maximum width of the table for smaller screens */
+    
+    }
+  
+    .job-positions-table thead {
+      display: none; /* Hide the header row */
+    }
+  
+    .job-positions-table tr {
+      display: block; /* Make rows block elements */
+      margin-bottom: 8px; /* Add spacing between rows */
+    }
+  
+    .job-positions-table td {
+      display: flex;
+      justify-content:center; /* Align label and value horizontally */
+      align-items: center;
+      padding: 10px;
+      font-size: 13px; /* Reduce font size for smaller screens */
+      border: 1px solid #ffffff;
+    }
+  
+    .job-positions-table td::before {
+      content: attr(data-label);
+      font-weight: bold;
+      text-align: center;
+    }
+    .job-description-container {
+        padding: 20px;
+        font-family: Arial, sans-serif;
       }
   }
+  

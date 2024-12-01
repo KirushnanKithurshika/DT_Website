@@ -3,6 +3,7 @@ import { useEffect } from "react";
 import './solarinstallation.css'
 import Solarinstallationimg from '../../assets/solarinstallation.jpg'
 import Batterystoragesolution from '../../assets/energystorage.png';
+import hybrid from '../../assets/hybrid.png';
 import Ongrid from '../../assets/ongrid.png';
 import Offgrid from '../../assets/offgrid.png';
 import Consultation from '../../assets/consultation.png';
@@ -115,6 +116,10 @@ function Solarinstallation() {
                 <div className='onoff-grids'  data-aos="fade-up">
                     <img src={Offgrid} alt="Off-Grid System" />
                     <p className="onoff-text"  data-aos="fade-up">Off-Grid System</p>
+                </div>
+                <div className='onoff-grids'  data-aos="fade-up">
+                    <img src={hybrid} alt="Off-Grid System" />
+                    <p className="onoff-text"  data-aos="fade-up">Hybrid System</p>
                 </div>
             </div>
             <h2 className='solarinstallation-heading'  data-aos="fade-up">3. Consultation And Site Assessments</h2>

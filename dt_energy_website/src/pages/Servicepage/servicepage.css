@@ -80,7 +80,6 @@
         /* Position navbar in the first row */
         z-index: 2;
         /* Ensure the navbar stays above the dark overlay */
-        padding: 0 20px;
         box-sizing: border-box;
     }
 
@@ -100,17 +99,18 @@
     }
 }
 
-@media (max-width: 420px) {
+@media (max-width: 430px) {
     .servicepage-background {
         height: 50vh;
         grid-template-rows: 100px auto;
     }
 
     .nav_container {
+        margin:5px;
         position: relative;
         grid-row: 1;
         z-index: 2;
-        padding: 0 5px;
+        padding:0px;
         box-sizing: border-box;
     }
     .servicepage {

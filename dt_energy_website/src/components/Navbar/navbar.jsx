@@ -92,13 +92,13 @@ const Navbar = () => {
         >
           Careers
         </NavLink>
-        <HashLink 
+        <NavLink 
           smooth 
-          to="/#contact-section" 
+          to="/contact" 
           className="nav-link"
         >
           Contact Us
-        </HashLink>
+        </NavLink >
       </nav>
     </header>
   );
