@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useRef } from "react";
 import backgroundImage from '../../assets/BG.jpg';
 import Navbar from '../../components/Navbar/navbar';
 import './homepage.css';
@@ -11,6 +11,12 @@ import Getaquote from '../../components/getaquote/getaquote';
 import ProjectShowcase from '../../components/Projects/projects';
 
 function Homepage() {
+
+  const targetRef = useRef(null);
+
+  const handleScroll = () => {
+    targetRef.current.scrollIntoView({ behavior: "smooth" });
+  };
   return (
     <div className='home_container'> 
      <div
@@ -27,7 +33,7 @@ function Homepage() {
           a Brighter Future</span>
         <span className="intro-subtext">Power Your Life with DT Energy a sustainable
           solar service providers</span>
-        <button className="intro-button">Learn More</button>
+        <button className="intro-button" onClick={handleScroll}>Learn More</button>
       </div>
     </div>
     <Introdt/>

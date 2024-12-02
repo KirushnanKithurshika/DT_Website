@@ -103,6 +103,7 @@ margin-bottom: 100px;
 /* Responsive design for medium screens like tablets */
 @media (max-width: 1500px) {
     .projects {
+      
         grid-template-columns: 1fr;
         grid-template-rows: auto; 
         row-gap: 30px;

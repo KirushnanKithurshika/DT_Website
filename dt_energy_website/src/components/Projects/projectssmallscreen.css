@@ -1,4 +1,5 @@
 .project-buttons {
+    width:100%;
     display: flex;
     justify-content: center;
     gap: 16px;
@@ -26,6 +27,8 @@
   
   /* Responsive Adjustments */
   @media (max-width: 768px) {
+    
+    
     .project-buttons {
       flex-direction: row; 
       margin-bottom: 30px;

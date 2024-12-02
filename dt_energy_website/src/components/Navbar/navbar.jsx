@@ -40,14 +40,18 @@ const Navbar = () => {
         <div className="navbar-contactnumber">
           <div className="icon-container">
             <div className="wave"></div>
+            <a href='tel:+94713339203'>
             <FaPhoneAlt className="icon" />
+            </a>
           </div>
-          <span className="phone-number">0707085790</span>
+          <span className="phone-number">+94713339203</span>
         </div>
 
         <div className="navbar-contactemail">
           <div className='icon-container'>
+            <a href='mailto:dreamtrillions100@gmail.com'>
           <FaEnvelope className="icon" />
+          </a>
           </div>
           <span>dreamtrillions100@gmail.com</span>
         </div>

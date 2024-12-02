@@ -35,13 +35,13 @@ function Contact() {
 
           <div className="contact-detailP">
             <span className="icon-container">
-              <a href="tel:+94772436082">
+              <a href="tel:+94713339203">
                 <img src={callL} alt="Phone Icon" />
               </a>
             </span>
             <strong>Phone:</strong>
             <span className="detail-text">
-              <a href="tel:+94772436082">+94772436082</a>
+              <a href="tel:+94713339203">+94713339203</a>
             </span>
           </div>
 
@@ -79,7 +79,7 @@ function Contact() {
         </div>
         <div className="icon-container">
           <a
-            href="https://wa.me/94772436082"
+            href="https://wa.me/94713339203"
             target="_blank"
             rel="noopener noreferrer"
           >
