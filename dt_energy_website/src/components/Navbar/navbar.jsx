@@ -46,12 +46,15 @@ const Navbar = () => {
         </div>
 
         <div className="navbar-contactemail">
+          <div className='icon-container'>
           <FaEnvelope className="icon" />
+          </div>
           <span>dreamtrillions100@gmail.com</span>
         </div>
 
-        <div className="navbar-humburger" onClick={toggleMenu}>
+        <div className="navbar-humburger" onClick={toggleMenu}><div className='icon-container'>
           {isMenuOpen ? <FaTimes className="icon" /> : <FaBars className="icon" />}
+        </div>
         </div>
       </div>
 
