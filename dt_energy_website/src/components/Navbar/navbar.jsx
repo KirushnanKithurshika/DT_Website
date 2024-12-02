@@ -80,12 +80,12 @@ const Navbar = () => {
         >
           Services
         </NavLink>
-        <NavLink 
+        {/* <NavLink 
           to="/projects" 
           className={({ isActive }) => (isActive ? 'active' : '')}
         >
           Projects
-        </NavLink>
+        </NavLink> */}
         <NavLink 
           to="/career" 
           className={({ isActive }) => (isActive ? 'active' : '')}

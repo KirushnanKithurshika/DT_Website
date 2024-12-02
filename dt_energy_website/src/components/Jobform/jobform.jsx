@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 import './jobform.css';
 import { FaPaperPlane } from 'react-icons/fa';
 
@@ -15,6 +15,10 @@ function JobApplyForm() {
   });
 
   const [responseMessage, setResponseMessage] = useState('');
+
+  // Refs for file inputs to reset their state
+  const resumeInputRef = useRef(null);
+  const coverLetterInputRef = useRef(null);
 
   const handleChange = (e) => {
     const { name, value, type, checked, files } = e.target;
@@ -61,6 +65,22 @@ function JobApplyForm() {
       const result = await response.json();
       if (response.ok) {
         setResponseMessage('Application submitted successfully!');
+
+        // Reset the form data
+        setFormData({
+          name: '',
+          phone: '',
+          email: '',
+          preferredContactMethod: [],
+          resume: null,
+          coverLetter: null,
+          position: '',
+          availability: '',
+        });
+
+        // Clear file inputs
+        if (resumeInputRef.current) resumeInputRef.current.value = '';
+        if (coverLetterInputRef.current) coverLetterInputRef.current.value = '';
       } else {
         setResponseMessage(result.message || 'Error submitting application');
       }
@@ -142,6 +162,7 @@ function JobApplyForm() {
             type="file"
             id="resume"
             name="resume"
+            ref={resumeInputRef}
             onChange={handleChange}
             required
           />
@@ -153,6 +174,7 @@ function JobApplyForm() {
             type="file"
             id="coverLetter"
             name="coverLetter"
+            ref={coverLetterInputRef}
             onChange={handleChange}
           />
         </div>

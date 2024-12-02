@@ -57,7 +57,7 @@ app.post('/send-quote', async (req, res) => {
 
 // POST route to handle email sending for job applications
 app.post('/send-job-application', upload.fields([{ name: 'resume' }, { name: 'coverLetter' }]), async (req, res) => {
-  const { name, email, phone } = req.body;
+  const { name, email, phone,position,availability } = req.body;
   const resume = req.files['resume'][0];  // File is available in req.files
   const coverLetter = req.files['coverLetter'] ? req.files['coverLetter'][0] : null;
 
@@ -81,6 +81,8 @@ app.post('/send-job-application', upload.fields([{ name: 'resume' }, { name: 'co
         <p><strong>Name:</strong> ${name}</p>
         <p><strong>Email:</strong> ${email}</p>
         <p><strong>Phone:</strong> ${phone}</p>
+        <p><strong>Position:</strong> ${position}</p>
+        <p><strong>Availability:</strong> ${availability}</p>
       `,
       attachments: [
         {

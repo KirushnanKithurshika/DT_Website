@@ -1,6 +1,7 @@
 .careerpage-container {
     display: grid;
     grid-template-columns: 1fr;
+    padding: 20px;
 }
 
 
@@ -44,7 +45,7 @@
     z-index: 1; 
 }
 .careerpage {
-    padding:20px;
+    padding:40px;
     background:blur;
     font-size: 60px; /* Adjust size as needed */
     color: rgb(255, 255, 255); /* Ensure visibility */
@@ -67,7 +68,7 @@
     font-weight: bold;
     color:  #156181;
     text-align: justify;
-    padding: 20px;
+    padding: 40px;
     margin-bottom: 20px;
 }
 @media (max-width: 1500px) {
@@ -84,7 +85,7 @@
         grid-template-rows: 150px auto;
     }
     .career-head {
-        margin-top: 40px;
+        
         font-size: 16px;
         padding: 30px;
     }

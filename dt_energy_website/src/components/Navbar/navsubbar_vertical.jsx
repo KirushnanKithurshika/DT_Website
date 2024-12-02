@@ -1,17 +1,26 @@
-import React, { useState } from 'react';
-import './navsubbar.css';  
+import React from 'react';
+import { NavLink } from 'react-router-dom';
+import './navsubbar.css';
+
 const Navsubarmobileview = () => {
   return (
-    <div>
-      <nav className='navsubbar-container'>
-        <a href="#">Home</a>
-        <a href="#">Products</a>
-        <a href="#">Services</a>
-        <a href="#">Projects</a>
-        <a href="#">News</a>
-        <a href="#">Contact Us</a>
-      </nav>
-    </div>
+    <nav className='navsubbar-container'>
+      <NavLink to="/" className={({ isActive }) => (isActive ? 'active' : '')}>
+        Home
+      </NavLink>
+      <NavLink to="/product" className={({ isActive }) => (isActive ? 'active' : '')}>
+        Products
+      </NavLink>
+      <NavLink to="/service" className={({ isActive }) => (isActive ? 'active' : '')}>
+        Services
+      </NavLink>
+      <NavLink to="/career" className={({ isActive }) => (isActive ? 'active' : '')}>
+        Careers
+      </NavLink>
+      <NavLink to="/contact" className={({ isActive }) => (isActive ? 'active' : '')}>
+        Contact Us
+      </NavLink>
+    </nav>
   );
 };
 
