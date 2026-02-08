@@ -5,7 +5,10 @@ url: "https://yourusername.github.io"
 
 theme: jekyll-theme-primer
 
+ 
+
 exclude:
+  - backend/node_modules/**/*.md
   - node_modules
   - backend/node_modules
   - dist
