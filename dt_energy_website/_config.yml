@@ -1,2 +1,20 @@
+# _config.yml
+title: DT Website
+description: My awesome site
+baseurl: "" # leave empty unless using a subpath
+url: "https://yourusername.github.io"
+
+theme: jekyll-theme-primer
+
+# Exclude files/folders from Jekyll processing
 exclude:
   - node_modules
+  - backend/node_modules
+  - dist
+  - dist-ssr
+  - "*.log"
+  - "*.local"
+  - .vscode
+  - .idea
+  - .DS_Store
+
