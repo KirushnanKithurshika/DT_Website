@@ -1,0 +1,17 @@
+title: DT Website
+description: My awesome site
+baseurl: "" # if deploying to root
+url: "https://yourusername.github.io"
+
+theme: jekyll-theme-primer
+
+exclude:
+  - node_modules
+  - backend/node_modules
+  - dist
+  - dist-ssr
+  - "*.log"
+  - "*.local"
+  - .vscode
+  - .idea
+  - .DS_Store
